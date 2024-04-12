@@ -7,10 +7,10 @@ def render_basic_line_chart():
     option = {
         "xAxis": {
             "type": "category",
-            "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+            "data": ["2024", "2023", "2022", "2021", "2020"],
         },
         "yAxis": {"type": "value"},
-        "series": [{"data": [820, 932, 901, 934, 1290, 1330, 1320], "type": "line"}],
+        "series": [{"data": [230000, 171000, 138000, 100000, 91000], "type": "line"}],
     }
     st_echarts(
         options=option, height="400px",
@@ -22,12 +22,12 @@ def render_basic_area_chart():
         "xAxis": {
             "type": "category",
             "boundaryGap": False,
-            "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+            "data": ["2024", "2023", "2022", "2021", "2020"],
         },
         "yAxis": {"type": "value"},
         "series": [
             {
-                "data": [820, 932, 901, 934, 1290, 1330, 1320],
+                "data": [230000, 171000, 138000, 100000, 91000],
                 "type": "line",
                 "areaStyle": {},
             }
