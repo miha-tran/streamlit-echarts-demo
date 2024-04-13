@@ -12,7 +12,7 @@ def main():
 
     with st.sidebar:
         st.header("Configuration")
-        api_options = ("year", "pyecharts")
+        api_options = ("echarts", "pyecharts")
         selected_api = st.selectbox(
             label="Choose your preferred API:",
             options=api_options,
